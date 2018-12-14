@@ -1,5 +1,12 @@
 {
   "dependencies": {
-    "com.unity.package-manager-ui": "2.0.3"
+    "com.unity.package-manager-ui": "2.0.3",
+    "jp.keijiro.git-package-test": "https://github.com/keijiro/GitPackageTest.git#upm"
+  },
+  "lock": {
+    "jp.keijiro.git-package-test": {
+      "hash": "f2664f0e5e4eab4c83d3a7a0f210e293dc96e969",
+      "revision": "upm"
+    }
   }
 }
