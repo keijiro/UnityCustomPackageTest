@@ -1,0 +1,9 @@
+{
+    "name": "jp.keijiro.git-package-test",
+    "displayName": "Git Package Test",
+    "version": "1.0.0",
+    "unity": "2018.3",
+    "author": "Keijiro Takahashi",
+    "description": "Test package for Git support on the Package Manager.",
+    "dependencies": { }
+}
