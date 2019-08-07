@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.unity.package-manager-ui": "2.0.3",
+    "com.unity.package-manager-ui": "2.2.0",
     "jp.keijiro.git-package-test": "https://github.com/keijiro/GitPackageTest.git#upm"
   },
   "lock": {
