@@ -8,6 +8,6 @@
   ],
   "dependencies": {
     "com.unity.package-manager-ui": "2.2.0",
-    "jp.keijiro.git-package-test": "1.0.1"
+    "jp.keijiro.unity-custom-package-test": "1.0.1"
   }
 }
