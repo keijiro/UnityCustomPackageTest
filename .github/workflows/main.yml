@@ -11,8 +11,8 @@ jobs:
       with:
         node-version: '12.x'
         registry-url: 'https://registry.npmjs.org'
-    - working-directory: Packages/jp.keijiro.unity-custom-package-test
     - run: npm install
     - run: npm publish
+      working-directory: Packages/jp.keijiro.unity-custom-package-test
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
