@@ -12,6 +12,6 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
     - run: npm install
     - run: npm publish
-      working-directory: 'Packages/jp.keijiro.*'
+      working-directory: 'Packages/jp.keijiro.unity-custom-package-test'
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
