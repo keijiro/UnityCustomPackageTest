@@ -7,6 +7,6 @@
     }
   ],
   "dependencies": {
-    "jp.keijiro.unity-custom-package-test": "1.0.3"
+    "jp.keijiro.unity-custom-package-test": "1.0.5"
   }
 }
