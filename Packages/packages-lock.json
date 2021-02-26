@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "jp.keijiro.unity-custom-package-test": {
+      "version": "file:jp.keijiro.unity-custom-package-test",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    }
+  }
+}

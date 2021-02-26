@@ -1,13 +1,4 @@
 {
-  "scopedRegistries": [
-    {
-      "name": "Keijiro",
-      "url": "https://registry.npmjs.com",
-      "scopes": [ "jp.keijiro" ]
-    }
-  ],
   "dependencies": {
-    "com.unity.package-manager-ui": "2.2.0",
-    "jp.keijiro.unity-custom-package-test": "1.0.2"
   }
 }

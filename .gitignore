@@ -1,16 +1,20 @@
 # Windows
 Thumbs.db
 Desktop.ini
-/*.csproj
-/*.sln
 
 # macOS
 .DS_Store
 
-# Vim
+# Code Editors
+/.idea
+/.vscode
+/*.csproj
+/*.sln
 *.swp
+*.vcxproj.user
 
 # Unity
-/Logs
 /Library
+/Logs
 /Temp
+/UserSettings
