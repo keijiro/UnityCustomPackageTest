@@ -1,4 +1,5 @@
 {
   "dependencies": {
+    "com.unity.inputsystem": "1.15.0"
   }
 }
