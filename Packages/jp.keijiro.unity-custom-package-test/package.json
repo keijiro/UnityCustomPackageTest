@@ -1,13 +1,12 @@
 {
-    "author": "Keijiro Takahashi",
-    "dependencies": { },
-    "description": "This is a small project for testing the custom package features of Unity Package Manager.",
-    "displayName": "Custom Package Test",
-    "keywords": [ "unity" ],
-    "license": "UNLICENSED",
-    "name": "jp.keijiro.unity-custom-package-test",
-    "repository": "github:keijiro/UnityCustomPackageTest",
-    "unity": "6000.0",
-    "unityRelease": "0f1",
-    "version": "1.0.7"
+  "name": "jp.keijiro.unity-custom-package-test",
+  "version": "1.0.7",
+  "displayName": "Custom Package Test",
+  "description": "This is a small project for testing the custom package features of Unity Package Manager.",
+  "unity": "6000.0",
+  "author": "Keijiro Takahashi",
+  "dependencies": { },
+  "documentationUrl": "https://github.com/keijiro/UnityCustomPackageTest",
+  "license": "UNLICENSED",
+  "_upm": { "changelog": "<b>Changed</b><br>- Something something<br>- Blah blah<br><br><b>Fixed</b><br>- Something something<br>- Blah blah" }
 }
