@@ -1,6 +1,6 @@
 {
   "name": "jp.keijiro.unity-custom-package-test",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "displayName": "Custom Package Test",
   "description": "This is a small project for testing the custom package features of Unity Package Manager.",
   "unity": "6000.0",
@@ -8,5 +8,5 @@
   "dependencies": { },
   "documentationUrl": "https://github.com/keijiro/UnityCustomPackageTest",
   "license": "UNLICENSED",
-  "_upm": { "changelog": "<b>Changed</b><br>- Something something<br>- Blah blah<br><br><b>Fixed</b><br>- Something something<br>- Blah blah" }
+  "_upm": { "changelog": "<b>Added</b><br>- Agent workflow documentation (AGENT.md)<br><br><b>Removed</b><br>- Removed publish.sh script in favor of agent-based workflow" }
 }
