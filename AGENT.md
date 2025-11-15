@@ -1,43 +1,56 @@
-# Agent 向けワークフロー指示
+# Workflow Instructions for Agents
 
-## プロジェクト構成
+## Project Structure
 
-Packages ディレクトリ内にこのプロジェクトで開発している主たる UPM パッケージが存在する。名前は "jp.keijiro.[package-name]" という形をとる。
+The Packages directory contains the primary UPM package developed in this
+project. Its name follows the jp.keijiro.[package-name] pattern.
 
-リポジトリのルートディレクトリに README.md, CHANGELOG.md, LICENSE が存在する。パッケージ内にも同名ファイルが存在しており、ルートディレクトリ側を更新した場合は、パッケージ内のそれらと同期する必要がある。
+The repository root contains README.md, CHANGELOG.md, and LICENSE. Equivalent
+files exist inside the package, so keep them synchronized with the root copies
+whenever you update the root-level documents.
 
-## アクション定義：「Changelog の更新」
+## Action Definition: Updating the Changelog
 
-「Changelog の更新」とは、CHANGELOG.md の [Unreleased] セクションを現状に合わせて更新することを意味する。直前のバージョンから現在までの git commit を確認することで変更内容を把握し、適切な内容を [Unreleased] セクションに追記する。
+Updating the changelog means bringing the [Unreleased] section of CHANGELOG.md
+up to date. Review git commits made since the previous release and append the
+relevant changes to that section.
 
-なお、[Unreleased] セクションには既に手動で記入された文章が存在することもある。それをプルーフリードした上で、追加した内容と適合するように調整する。また、[Unreleased] セクションが存在しない場合は追加する。
+The [Unreleased] section may already include manually written text. Proofread it
+and adjust the wording so that it matches the newly added entries. Add the
+[Unreleased] section if it is missing.
 
-## アクション定義：「パッケージのリリース準備」
+## Action Definition: Preparing a Package Release
 
-「パッケージのリリース準備」とは、Packages ディレクトリ内に存在する UPM パッケージの情報を更新し、新しいバージョンをリリースするための準備を行うことを意味する。
+Preparing a package release means refreshing the UPM package data inside the
+Packages directory so it is ready for a new version.
 
-具体的には次のような作業を行う：
+Perform the following tasks:
 
-- package.json の version をインクリメントする。
-- package.json の "_upm" エレメントを更新する。その内容については後述する。
-- CHANGELOG.md 内の [Unreleased] セクション見出しを、新しいバージョン番号と今日の日付で更新する。
-- それらの変更を git commit し、git tag で新しいバージョン番号を付与する。
+- Bump the version field in package.json.
+- Update the `_upm` element in package.json as described below.
+- Change the [Unreleased] heading in CHANGELOG.md to the new version and
+  today's date.
+- Commit the changes and create a git tag for the new version number.
 
-## package.json の "_upm" エレメントについて
+## About the `_upm` Element in package.json
 
-package.json の "_upm" エレメントには "changelog" というエントリのみ存在する。その内容は CHANGELOG.md の最新バージョンの内容をコピーしたものであるが、Unity の Rich Text フォーマットで記述する必要がある。具体的には、見出しを <b> で太字化し、改行は <br> で行う。２つ目以降の見出しの前には改行を一つ追加で挿入すること。
+The `_upm` element in package.json contains only the `changelog` entry. Copy the
+latest version section from CHANGELOG.md into that entry, but convert it to
+Unity Rich Text. Use <b> tags for headings and <br> for line breaks. Insert an
+extra <br> before every heading after the first one.
 
-## アクション定義：「パッケージのリリース」
+## Action Definition: Releasing the Package
 
-「パッケージのリリース」とは、Unity からエクスポートされた tarball を新バージョンとしてリリースすることを意味する。
+Releasing the package means publishing the tarball exported from Unity as the
+new version.
 
-具体的には次のような作業を行う：
+Perform the following tasks:
 
-- リポジトリのルートディレクトリに "[package-name]-[version].tgz" という形で tarball が存在することを確認する。これは Unity Editor から手動でエクスポート作業を行う必要があるので、このファイルが見つからない場合はユーザーに作業を求めること。
-- gh コマンドを使って GitHub 上にリリースを作成する。
-  - このリリースのリリースノートは CHANGELOG.md の最新バージョンの内容をコピーしたものを使う。
-  - このリリースのタイトルは内容を端的にまとめたうえで "[version]: [title]" のという形にする。
-    - まとめ方は非常に端的なものでよく、例えばバグ修正が中心であれば "Bug fixes" のようなもので構わない。
-    - タイトルを決めたら、ユーザーに一度確認を求めること。
-- npm コマンドを使って tarball を publish する。
-
+- Ensure a `[package-name]-[version].tgz` tarball exists in the repository root.
+  This file must be exported manually from the Unity Editor, so ask the user to
+  do so if it is missing.
+- Use the gh command to create a GitHub release. Copy the latest CHANGELOG.md
+  section into the release notes.
+- Make the release title a concise summary in the form `[version]: [title]`.
+  Confirm the chosen title with the user before finalizing the release.
+- Use npm to publish the tarball.
