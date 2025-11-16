@@ -6,7 +6,9 @@
   "unity": "6000.0",
   "author": "Keijiro Takahashi",
   "dependencies": { },
+  "changelogUrl": "https://github.com/keijiro/UnityCustomPackageTest/blob/master/CHANGELOG.md",
   "documentationUrl": "https://github.com/keijiro/UnityCustomPackageTest",
+  "licensesUrl": "https://github.com/keijiro/UnityCustomPackageTest/blob/master/LICENSE",
   "license": "UNLICENSED",
   "_upm": { "changelog": "<b>Added</b><br>- Agent workflow documentation (AGENT.md)<br><br><b>Removed</b><br>- Removed publish.sh script in favor of agent-based workflow" }
 }
