@@ -49,6 +49,7 @@ Perform the following tasks:
 - Ensure a `[package-name]-[version].tgz` tarball exists in the repository root.
   This file must be exported manually from the Unity Editor, so ask the user to
   do so if it is missing.
+- Push commits and tags to the remote repository before creating the release.
 - Use the gh command to create a GitHub release. Copy the latest CHANGELOG.md
   section into the release notes.
 - Make the release title a concise summary in the form `[version]: [title]`.
