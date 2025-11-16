@@ -12,7 +12,8 @@ https://gist.githubusercontent.com/keijiro/5fc40f713538a819329685d30ee782ff/raw/
 Remove any placeholders and append entries for the two most recent versions.
 
 The “two most recent versions” refers to the most recent git tag and the one
-immediately before it.
+immediately before it. Note that tags follow the Semantic Versioning
+specification and omit the "v" prefix; ignore any tags that include it.
 
 ## Step 2 - Update package.json
 
@@ -22,7 +23,8 @@ file as a reference:
 https://raw.githubusercontent.com/keijiro/UnityCustomPackageTest/refs/heads/master/Packages/jp.keijiro.unity-custom-package-test/package.json
 
 Reorder the elements to match the reference and add missing fields such as
-changelogUrl. Derive the URLs from the git remote.
+changelogUrl. Derive the URLs from the git remote. Remove unused entries such as
+`keywords` and `unityRelease`.
 
 Add an empty changelog entry inside the "_upm" element. This value will be
 generated when preparing the next release, so it should remain empty for now.
