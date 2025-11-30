@@ -11,9 +11,15 @@ https://gist.githubusercontent.com/keijiro/5fc40f713538a819329685d30ee782ff/raw/
 
 Remove any placeholders and append entries for the two most recent versions.
 
-The “two most recent versions” refers to the most recent git tag and the one
-immediately before it. Note that tags follow the Semantic Versioning
-specification and omit the "v" prefix; ignore any tags that include it.
+The “two most recent versions” refers to the latest two releases available on
+GitHub. These can be listed using the following `gh` command:
+
+```
+gh release list --limit 2
+```
+
+Summarize the details of these releases based on the release notes (also
+retrievable with `gh`) and the git commit logs.
 
 ## Step 2 - Update package.json
 
