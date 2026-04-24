@@ -1,6 +1,6 @@
 {
   "name": "jp.keijiro.unity-custom-package-test",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "displayName": "Custom Package Test",
   "description": "This is a small project for testing the custom package features of Unity Package Manager.",
   "unity": "6000.0",
@@ -10,5 +10,5 @@
   "documentationUrl": "https://github.com/keijiro/UnityCustomPackageTest",
   "licensesUrl": "https://github.com/keijiro/UnityCustomPackageTest/blob/master/LICENSE",
   "license": "UNLICENSED",
-  "_upm": { "changelog": "<b>Added</b><br>- URLs to package manifest<br><br><b>Changed</b><br>- Renamed AGENT.md to AGENTS.md" }
+  "_upm": { "changelog": "<b>Removed</b><br>- Legacy GitHub Actions release workflow<br>- Unused agent workflow and migration documents after cleanup" }
 }
